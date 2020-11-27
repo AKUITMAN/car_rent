@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.UserMapper">
+    <resultMap id="BaseResult" type="user">
+        <id column="id" property="id"></id>
+        <result column="tel" property="tel"></result>
+        <result column="password" property="password"></result>
+        <result column="email" property="email"></result>
+        <result column="invitation" property="invitation"></result>
+    </resultMap>
+    <select id="login" resultMap="BaseResult">
+    select * from sys_user where tel=#{tel} and password=#{password}
+    </select>
+    <select id="adminlogin" resultMap="BaseResult">
+    select * from sys_user where tel=#{tel} and password=#{password} and apply=1
+    </select>
+    <insert id="register" parameterType="user">
+        INSERT  INTO sys_user(tel,password,email,invitation,apply) VALUES (#{tel},#{password},#{email},#{invitation},0)
+    </insert>
+    <select id="findAllUser" resultMap="BaseResult">
+    select * from sys_user where apply=0
+    </select>
+    <delete id="delById">
+        delete from sys_user where id=#{id} and apply=0
+    </delete>
+    <insert id="newuser" parameterType="user">
+        INSERT  INTO sys_user(tel,password,email,invitation,apply) VALUES (#{tel},#{password},#{email},#{invitation},#{apply})
+    </insert>
+    <select id="findById" resultMap="BaseResult">
+    select * from sys_user where id=#{id}
+    </select>
+    <update id="updateuser" parameterType="user">
+    UPDATE sys_user set tel=#{tel},password=#{password},email=#{email},invitation=#{invitation} where id=#{id}
+    </update>
+    <update id="update" parameterType="user">
+        update sys_user set
+        tel=#{tel},
+        password=#{password},
+        email=#{email},
+        invitation=#{invitation}
+        <where>
+            id=#{id}
+        </where>
+    </update>
+
+
+</mapper>

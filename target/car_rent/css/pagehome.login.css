@@ -1,0 +1,259 @@
+#app {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#app, body, html {
+    width: 100%;
+    min-width: 1200px;
+}
+* {
+     margin: 0;
+     padding: 0;
+     font-family: Microsoft YaHei!important;
+}
+body, html {
+    font-family: Microsoft YaHei!important;
+    font-size: 14px;
+    color: #60606c;
+}
+.header2[data-v-95c8bc32] {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+}
+.header2 div[data-v-95c8bc32] {
+    height: 120px;
+    line-height: 120px;
+}
+div {
+    display: block;
+}
+.clear {
+    zoom: 1;
+}
+.layout {
+    margin: 0 auto;
+    width: 1200px;
+}
+.logo[data-v-95c8bc32] {
+    width: 170px;
+}
+.left {
+    float: left;
+}
+.header2 a[data-v-95c8bc32] {
+    line-height: 120px;
+    color: #c4020d;
+    font-size: 18px;
+}
+a {
+    background-color: transparent;
+}
+
+a {
+    color: #60606c;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.logo img[data-v-95c8bc32] {
+    width: 170px;
+    height: 45px;
+    margin-top: 37px;
+}
+fieldset, img {
+    border: 0;
+}
+.header2 h2[data-v-95c8bc32] {
+    height: 120px;
+    line-height: 120px;
+    padding-left: 20px;
+    color: #c4020d;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.right {
+    float: right;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+
+.login[data-v-0a99943a] {
+    height: 800px;
+    border-top: 2px solid #f49289;
+    padding: 90px 0;
+}
+.loginCom[data-v-0a99943a] {
+    height: 430px;
+}
+.loginCom .loginImg[data-v-0a99943a], .loginCom .loginImg img[data-v-0a99943a] {
+    width: 640px;
+    height: 430px;
+}
+.loginCom .loginType[data-v-0a99943a] {
+    width: 530px;
+    height: 430px;
+    padding: 30px 50px;
+    box-shadow: 0 0 5px #888;
+}
+
+.loginCom .loginType[data-v-0a99943a] .denglu {
+
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #ee4f39;
+    text-align: center;
+    font-size: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+.loginCom .loginType[data-v-0a99943a] .forms {
+    width: 430px;
+    height: 160px;
+    margin: 35px 0 10px;
+}
+
+
+.layui-form-label {
+    width: 70px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    overflow: visible;
+    padding: 0 0;
+}
+.layui-input-block {
+    margin-left: 100px;
+    min-height: 40px;
+}
+
+.layui-form-item {
+    margin-bottom:20px;
+}
+
+.forget[data-v-0a99943a] {
+    color: #ce0000;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.other[data-v-0a99943a] {
+    width: 430px;
+    height: 30px;
+}
+
+.layui-btn{
+    width: 430px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background: #c8000b;
+    border-radius: 5px;
+    margin: 20px 0 10px;
+    cursor: pointer;
+}
+.goRegister[data-v-0a99943a] {
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+}
+.goRegister a[data-v-0a99943a] {
+    color: #e45141;
+}
+
+.loginPoster[data-v-0a99943a] {
+    height: 130px;
+    padding: 90px 170px 0;
+}
+.loginPoster .posterItem[data-v-0a99943a] {
+    float: left;
+    width: 65px;
+    height: 65px;
+    margin: 0 73px;
+}
+.loginPoster .posterItem div[data-v-0a99943a]:first-of-type {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+}
+.loginPoster .posterItem .bgOrange[data-v-0a99943a] {
+    background: #f04e37;
+}
+.loginPoster .posterItem div:first-of-type img[data-v-0a99943a] {
+    width: 100%;
+}
+.loginPoster .posterItem div[data-v-0a99943a]:nth-of-type(2) {
+    width: 65px;
+    height: 55px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 16px;
+}
+.loginPoster .empty[data-v-0a99943a] {
+    float: left;
+    width: 3px;
+    height: 85px;
+    margin: 10px 1px 0;
+    background: #dfdfdf;
+}
+.loginPoster .posterItem .bgYellow[data-v-0a99943a] {
+    background: #ebbc62;
+}
+.footer2[data-v-3aaf9db2] {
+    width: 100%;
+    background: #c8000b;
+    padding: 70px 0;
+}
+
+.d1[data-v-3aaf9db2], .d2[data-v-3aaf9db2], .d3[data-v-3aaf9db2], .d4[data-v-3aaf9db2] {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+}
+.d1 a[data-v-3aaf9db2], .d2 span[data-v-3aaf9db2] {
+    margin: 0 10px;
+    color: #fff;
+}
+.d5[data-v-3aaf9db2] {
+    text-align: center;
+}
+.d5 .img1[data-v-3aaf9db2] {
+    width: 50px;
+    height: 50px;
+}
+.d5 .img2[data-v-3aaf9db2] {
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+

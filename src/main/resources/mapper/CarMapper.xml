@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.CarMapper">
+
+    <resultMap id="BaseResult" type="car">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="type" property="type"></result>
+        <result column="sitnum" property="sitnum"></result>
+        <result column="cid" property="cid"></result>
+        <result column="number" property="number"></result>
+        <result column="picture" property="picture"></result>
+    </resultMap>
+
+
+    <select id="findAll" resultMap="BaseResult">
+        SELECT * from sys_car  order by price asc
+    </select>
+    <select id="findAllCar" resultMap="BaseResult">
+         SELECT * from sys_car
+    </select>
+
+    <select id="findNumber" resultMap="BaseResult">
+        SELECT * from sys_car  order by number desc
+    </select>
+
+    <select id="findById" resultMap="BaseResult">
+        SELECT * from sys_car  where id=#{id}
+    </select>
+    <delete id="delById">
+        delete from sys_car where id=#{id}
+    </delete>
+    <update id="updateCar" parameterType="car">
+        update sys_car set name=#{name},type=#{type},sitnum=#{sitnum},cid=#{cid},price=#{price},number=#{number},picture=#{picture} where id=#{id}
+    </update>
+    <insert id="newCar" parameterType="car">
+        INSERT  INTO sys_car(name,type,sitnum,cid,price,number,picture) VALUES (#{name},#{type},#{sitnum},#{cid},#{price},#{number},#{picture})
+    </insert>
+</mapper>

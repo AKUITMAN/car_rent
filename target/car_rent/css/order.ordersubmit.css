@@ -1,0 +1,324 @@
+element.style {
+    position: static;
+}
+
+#app, body, html {
+    width: 100%;
+    min-width: 1200px;
+}
+
+body, html {
+    font-family: Microsoft YaHei!important;
+    font-size: 14px;
+    color: #60606c;
+}
+
+
+
+#app {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app, body, html {
+    width: 100%;
+    min-width: 1200px;
+}
+
+.bgGray {
+    background: #f2f3f5;
+}
+
+.header3 {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+}
+
+.header3 div[data-v-95ac8d30] {
+    height: 120px;
+    line-height: 120px;
+}
+
+.layout {
+    margin: 0 auto;
+    width: 1200px;
+}
+.clear {
+    zoom: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei!important;
+}
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.header3 div[data-v-95ac8d30] {
+    height: 120px;
+    line-height: 120px;
+}
+
+.logo[data-v-95ac8d30] {
+    width: 170px;
+}
+.left {
+    float: left;
+}
+a {
+    color: #60606c;
+    text-decoration: none;
+}
+.logo img[data-v-95ac8d30] {
+    width: 170px;
+    height: 45px;
+    margin-top: 37px;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+.header3 .header3Nav[data-v-95ac8d30] {
+    margin-left: 30px;
+    color: #c2c1c7;
+    line-height: 123px;
+}
+.right {
+    float: right;
+}
+
+.header3Nav a[data-v-95ac8d30] {
+    color: #c2c1c7;
+    margin: 0 5px;
+}
+
+.header3 div[data-v-95ac8d30] {
+    height: 120px;
+    line-height: 120px;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 14px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.header3User span.sp1[data-v-95ac8d30] {
+    color: #62626e;
+    margin: 0 20px 0 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header3User span.sp2[data-v-95ac8d30] {
+    color: #a1a1a3;
+}
+.header3User span.sp3[data-v-95ac8d30] {
+    color: #cf0006;
+}
+
+.checkOrderTit {
+    height: 140px;
+    margin-top: 30px;
+}
+
+.checkOrderTit .checkOrderTitCom {
+    height: 110px;
+    padding: 20px 30px;
+    background: #fff;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT {
+    width: 1140px;
+    height: 32px;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT div.td1 {
+    width: 134px;
+    height: 2px;
+    margin-top: 15px;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT div {
+    float: left;
+}
+
+.bgRed {
+    background: #c7000b;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT div.td2 {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 32px;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT div {
+    float: left;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComT div.td3 {
+    width: 388px;
+    height: 2px;
+    margin-top: 15px;
+}
+
+.bgGray1 {
+    background: #c2c1c7;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB {
+    width: 1140px;
+    height: 43px;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB .bd1 {
+    width: 300px;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB div {
+    float: left;
+    line-height: 43px;
+    text-align: center;
+    font-size: 18px;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB .bd2 {
+    width: 540px;
+}
+
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB div {
+    float: left;
+    line-height: 43px;
+    text-align: center;
+    font-size: 18px;
+}
+.checkOrderTit .checkOrderTitCom .checkOrderTitComB .bd1 {
+    width: 300px;
+}
+.colorGray {
+    color: #c2c1c7;
+}
+ .orderMsg {
+    width: 1200px;
+    padding: 20px;
+    background: #fff;
+     margin: 0 auto;
+}
+
+.orderMsgL {
+    width: 500px;
+    height: 190px;
+    margin-top: 60px;
+}
+.orderMsgL img {
+    width: 225px;
+    height: 150px;
+}
+.orderMsgL p {
+    width: 225px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #e94d39;
+    font-size: 25px;
+}
+.orderMsgR {
+    width: 200px;
+    height: 220px;
+}
+.orderMsgR .carTitle {
+    width: 530px;
+    height: 80px;
+    position: relative;
+}
+
+.orderMsgR .carTitle .carTitle1 {
+    color:  #e94d39;
+    font-size: 35px;
+    line-height: 80px;
+}
+
+.selCarMsg .selCarMsgCom {
+    width: 530px;
+    height: 80px;
+}
+
+.selCarMsg .selCarMsgCom .MsgTit {
+    width: 530px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.selCarMsg .selCarMsgCom .MsgTit span {
+    margin: 0 5px;
+}
+
+.selCarMsg .selCarMsgCom .Msg {
+    width: 500px;
+    padding-left: 30px;
+    margin: 5px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.buttons {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #c7000b;
+    border: none;
+    border-radius: 5px;
+    margin-left: 110px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.costCom {
+    width: 310px;
+    background: #fff;
+    padding: 0px 20px 0;
+}
+
+.costCom h3 {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #c7000b;
+    font-size: 20px;
+}
+.costCom .item {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px dashed #5e5d63;
+}
+.costCom .item span:first-of-type {
+    font-weight: 700;
+    font-size: 16px;
+}
+.costCom .item span:nth-of-type(2) {
+    color: #f2442b;
+    font-size: 16px;
+}
+
+.costCom .payMony {
+    height: 50px;
+    line-height: 30px;
+}
+.costCom .payMony label {
+    color: #5f5f61;
+    font-size: 12px;
+}
+
+.costCom .payMony label span {
+    color: #f2442b;
+    font-size: 28px;
+}
+

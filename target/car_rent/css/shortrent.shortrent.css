@@ -1,0 +1,441 @@
+
+head {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei!important;
+}
+body {
+    display: block;
+    margin: 8px;
+    background-color: #F2F3F3;
+}
+body, html {
+    font-family: Microsoft YaHei!important;
+    font-size: 14px;
+    color: #60606c;
+}
+
+div {
+    display: block;
+}
+#app {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app, body, html {
+    width: 100%;
+    min-width: 1200px;
+}
+
+
+.csdheader[data-v-67ef3a4a] {
+    width: 100%;
+    height: 36px;
+    background: #ececec;
+}
+
+.csdheader div[data-v-67ef3a4a] {
+    height: 36px;
+    line-height: 36px;
+}
+.clear {
+    zoom: 1;
+}
+.layout {
+    margin: 0 auto;
+    width: 1200px;
+}
+.csdnav[data-v-67ef3a4a] {
+    margin-left: 20px;
+}
+.left {
+    float: left;
+}
+label {
+    cursor: default;
+}
+
+.csdnav a[data-v-67ef3a4a] {
+    margin: 0 2px;
+}
+
+.colorRed {
+    color: #c6000f;
+}
+
+
+element.style {
+    margin-right: 10px;
+}
+a {
+    color: #60606c;
+    text-decoration: none;
+}
+
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.right {
+    float: right;
+}
+
+element.style {
+    color: rgb(199, 0, 11);
+}
+.phone a[data-v-67ef3a4a] {
+    margin: 0 2px;
+}
+
+.phone div[data-v-67ef3a4a] {
+    float: left;
+}
+
+.typeTab[data-v-67ef3a4a] {
+    margin: 0 20px;
+}
+
+.typeTab a[data-v-67ef3a4a] {
+    margin: 0 20px;
+    cursor: pointer;
+}
+.menu[data-v-67ef3a4a] {
+    width: 100px;
+    margin: 0 20px;
+    color: #c7000b;
+    cursor: pointer;
+}
+.menu a[data-v-67ef3a4a] {
+    color: #60606c;
+}
+.phone span[data-v-67ef3a4a] {
+    color: #c6000f;
+    margin: 0 10px 0 0;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 14px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone:before {
+    content: "\E683";
+}
+
+.csdnav[data-v-39f7f629] {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+}
+
+.csdnav div[data-v-39f7f629] {
+    height: 120px;
+}
+.csdnav[data-v-39f7f629] {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+}
+.csdnav div[data-v-39f7f629] {
+    height: 120px;
+}
+.logo[data-v-39f7f629] {
+    width: 170px;
+}
+.logo img[data-v-39f7f629] {
+    width: 170px;
+    height: 45px;
+    margin-top: 37px;
+}
+fieldset, img {
+    border: 0;
+}
+.navCom[data-v-39f7f629] {
+    width: 1030px;
+}
+.navCom ul[data-v-39f7f629] {
+    height: 120px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.navCom ul li[data-v-39f7f629] {
+    height: 115px;
+    line-height: 120px;
+    font-size: 16px;
+    float: right;
+    padding: 0 20px;
+}
+ul li {
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.navCom ul li a[data-v-39f7f629] {
+    display: block;
+    height: 115px;
+    font-size: 18px;
+}
+
+.chooseCar {
+    height: 280px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 30px 0;
+}
+.chooseCarL {
+    width: 450px;
+    height: 140px;
+    margin: 0 auto;
+}
+.chooseCarL .item {
+    width: 600px;
+    height: 40px;
+    margin: 15px 0;
+}
+
+.itemL span, .itemR span {
+    line-height: 40px;
+}
+
+.itemTitle-red {
+    color: #c7000b;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.chooseCarR {
+    width: 0px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.chooseCarR .goChooseCar {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #c8000b;
+    border-radius: 5px;
+    font-size: 26px;
+    cursor: pointer;
+
+}
+#sel {
+    width: 500px;
+    height: 40px;
+}
+
+#seltwo {
+    width: 500px;
+    height: 40px;
+}
+
+#dqsel, #bmsel {
+    width: 170px;
+    height: 30px;
+    margin: 0 5px;
+}
+#hcc, #hcs {
+    width: 170px;
+    height: 30px;
+    margin: 0 5px;
+
+}
+
+.selCarMsg {
+    width: 530px;
+    height: 40px;
+    margin: 0 70px;
+}
+
+
+.selCarMsg .selCarMsgCom {
+    width: 530px;
+    height: 40px;
+}
+
+.selCarMsg .selCarMsgCom .Msg {
+    width: 500px;
+    padding-left: 30px;
+    margin: 5px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+
+
+.carListTab {
+    padding: 30px;
+    background: #fff;
+    margin: 20px 100px;
+}
+.carListTab h2 {
+    border-left: 4px solid #ca000e;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.layui-tab-title{
+    font-size: 22px;
+}
+
+.layui-tab-brief>.layui-tab-title .layui-this {
+    color: #ca000e;
+}
+
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ca000e;
+}
+
+.layui-tab-title li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    font-size: 25px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    position: relative;
+    line-height: 40px;
+    min-width: 65px;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carListCom .item {
+    min-height: 145px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.thisPlace {
+    width: 850px;
+    height: 125px;
+    padding: 10px 15px;
+    margin: 30px auto;
+}
+
+.itemCarImg {
+    width: 190px;
+    height: 125px;
+}
+
+.itemCarImg img {
+    width: 200px;
+    height: 130px;
+}
+
+.itemCarMsg {
+    width: 240px;
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+.itemCarMsg h1 {
+    width: 240px;
+    height: 40px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.itemCarMsg div, .itemCarMsg p {
+    width: 240px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #9b969a;
+}
+
+.itemPriceMsg {
+    width: 250px;
+    height: 125px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.itemPriceMsg .itemPriceMsgL {
+    width: 18px;
+    height: 125px;
+}
+
+.itemPriceMsg .itemPriceMsgC {
+    width: 95px;
+    height: 85px;
+    padding: 10px 0 0 20px;
+    position: relative;
+}
+
+.itemPriceMsg .itemPriceMsgC .p1 {
+    width: 95px;
+    height: 45px;
+    line-height: 65px;
+    font-size: 12px;
+    color: #9b969a;
+}
+
+.itemPriceMsg .itemPriceMsgC .p1 span {
+    font-size: 18px;
+    color: #f24b38;
+}
+
+.itemPriceMsg .carLiBao {
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    font-size: 12px;
+    color: #9b969a;
+}
+
+.butt {
+    width: 100px;
+    height: 35px;
+    margin-top: 45px;
+    background: #c8000b;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.CityMapper">
+
+    <resultMap id="BaseResult" type="city">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="pid" property="pid"></result>
+    </resultMap>
+    <select id="findByIdAndPid" resultMap="BaseResult">
+       select  id,name,pid from sys_city where pid = #{pid}
+    </select>
+
+    <select id="findById" resultMap="BaseResult">
+       select  id,name,pid from sys_city where id = #{getid} or id=#{backid}
+    </select>
+
+
+</mapper>

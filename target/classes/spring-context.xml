@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       ">
+    <!-- 扫描包，声明组件扫描器，用来创建service对象-->
+    <context:component-scan base-package="com.qf"></context:component-scan>
+    <!--读取jdbc属性配置文件-->
+    <context:property-placeholder location="classpath:/jdbc.properties" />
+    <!--声明数据源，连接数据库-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${driver}"></property>
+        <property name="url" value="${url}"></property>
+        <property name="username" value="${name}"></property>
+        <property name="password" value="${password}"></property>
+    </bean>
+    <!--创建SqlSessionFactory对象-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="typeAliasesPackage" value="com.qf.pojo"></property>
+        <property name="mapperLocations" value="classpath:mapper/*Mapper.xml"></property>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor"></bean>
+            </array>
+        </property>
+    </bean>
+    <!--创建dao对象-->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.qf.dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>
+    <!--添加事务配置-->
+    <!-- 事务控制 DataSourceTransactionManager 事务管理器 -->
+    <bean  id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <!-- 使用注解方式开启了事务，进行回滚-->
+    <tx:annotation-driven transaction-manager="tx"></tx:annotation-driven>
+    <!--aop使用注解方式进行操作-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+</beans>

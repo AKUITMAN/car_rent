@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.OrderMapper">
+    <resultMap id="BaseResult" type="order">
+        <id column="id" property="id"></id>
+        <result column="cid" property="cid"></result>
+        <result column="uid" property="uid"></result>
+        <result column="getid" property="getid"></result>
+        <result column="backid" property="backid"></result>
+        <result column="oprice" property="oprice"></result>
+        <result column="status" property="status"></result>
+    </resultMap>
+    <insert id="insert" parameterType="order">
+       insert into sys_order(cid,uid,getid,backid,oprice,status) values (#{cid},#{uid},#{getid},#{backid},#{oprice},#{status})
+    </insert>
+    <select id="findAll" resultMap="BaseResult">
+        select * from sys_order
+    </select>
+    <delete id="delById">
+        delete from sys_order where id=#{id}
+    </delete>
+    <update id="updateOrder" parameterType="order">
+        UPDATE sys_order set cid=#{cid},uid=#{uid},getid=#{getid},backid=#{backid},oprice=#{oprice},status=#{status} where id=#{id}
+    </update>
+    <insert id="addOrder" parameterType="order">
+        INSERT  INTO sys_order(cid,uid,getid,backid,oprice,status) VALUES (#{cid},#{uid},#{getid},#{backid},#{oprice},#{status})
+    </insert>
+    <delete id="deleteById">
+        delete from sys_order where id=#{id}
+    </delete>
+
+</mapper>

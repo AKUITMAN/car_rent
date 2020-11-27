@@ -1,0 +1,61 @@
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+          xmlns:context="http://www.springframework.org/schema/context"
+          xmlns:mvc="http://www.springframework.org/schema/mvc"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd
+							http://www.springframework.org/schema/mvc
+							http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--    &lt;!&ndash; 扫描加了注解的类的包&ndash;&gt;-->
+<!--    <context:component-scan base-package="com.qf.controller"></context:component-scan>-->
+<!--    &lt;!&ndash; 注解驱动开发&ndash;&gt;-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+<!--    <mvc:default-servlet-handler/>-->
+
+    <!--SpringMVC的配置文件，包含网站跳转逻辑的控制，配置 -->
+    <context:component-scan base-package="com.qf"
+                            use-default-filters="false">
+        <!--只扫描控制器。 -->
+        <context:include-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+
+
+    <mvc:default-servlet-handler/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+    <!--视图解析器-->
+   <!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        &lt;!&ndash;页面的存储路径&ndash;&gt;
+        <property name="prefix" value="/jt/"></property>
+        &lt;!&ndash; 页面的后缀名 &ndash;&gt;
+        <property name="suffix" value=".html"></property>
+    </bean>-->
+        <mvc:interceptors>
+            <mvc:interceptor>
+                <!-- /** 代表所有方法进行拦截-->
+                <mvc:mapping path="/**"/>
+                <!-- mvc:exclude-mappint 代表放行，不进行拦截-->
+                <mvc:exclude-mapping  path="/user/*"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/css/*"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/fonts/**"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/images/*"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/js/**"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/layui/**"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/mymain/*"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/order/*"></mvc:exclude-mapping>
+                <mvc:exclude-mapping  path="/shortRent/*"></mvc:exclude-mapping>
+                <bean class="com.qf.interceptor.MyInterceptor"></bean>
+            </mvc:interceptor>
+        </mvc:interceptors>
+<!--        &lt;!&ndash; 文件上传解析器&ndash;&gt;-->
+        <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+            <property name="maxUploadSize" value="1048576"></property>
+        </bean>
+
+</beans>
